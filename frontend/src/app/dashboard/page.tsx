@@ -116,7 +116,7 @@ export default function DashboardPage() {
               <input
                 value={event}
                 onChange={(e) => setEvent(e.target.value)}
-                placeholder="Describe a business event... (e.g., 'Hire Rahul as Backend Developer')"
+                placeholder="Describe a business event... (e.g., 'Hire Rahul Sharma as Backend Developer')"
                 className="w-full rounded-xl border border-white/[0.1] bg-white/[0.03] px-4 py-3 pr-20 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/20 transition-all"
               />
               <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1">
@@ -144,10 +144,10 @@ export default function DashboardPage() {
 
             <div className="mt-3 flex flex-wrap gap-2">
               {[
-                'Hire Rahul as Backend Developer',
-                'Priya requested leave',
-                'Aman resigned today',
-                'Review Sarah performance',
+                'Hire Rahul Sharma as Backend Developer',
+                'Priya Patel requested leave',
+                'Aman Verma resigned today',
+                'Review Ananya Reddy performance',
               ].map((suggestion) => (
                 <button
                   key={suggestion}
