@@ -3,7 +3,7 @@ from app.config import settings
 
 supabase: Client = create_client(
     settings.supabase_url,
-    settings.supabase_service_key
+    settings.supabase_service_key or settings.supabase_key
 )
 
 
@@ -15,5 +15,5 @@ def get_supabase() -> Client:
 def get_supabase_service() -> Client:
     return create_client(
         settings.supabase_url,
-        settings.supabase_service_key
+        settings.supabase_service_key or settings.supabase_key
     )
